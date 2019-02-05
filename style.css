@@ -1,5 +1,76 @@
-/* Removes browser defaults. */
+/* Remove Browser Defaults*/
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
 	margin: 0; padding: 0; border: 0;
 }
 
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Top Navigation Bar - Links */
+.top-nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Top Navigation - Hover */
+.top-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Content */
+.content {
+  background-color: #95c3b9;
+  padding: 15px;
+}
+
+/* Two Column Layout */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear Floats After Columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive Layout - Stack Columns */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
