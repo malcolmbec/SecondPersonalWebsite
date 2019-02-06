@@ -70,7 +70,7 @@ ul {
   flex-grow: 1;
   flex-shrink: 0;
   background-color: #95c3b9;
-  padding: 50px;
+  padding: 44px 50px;
 }
 
 /* Section Header */
@@ -126,7 +126,7 @@ ul {
 
 /* Responsive Wrapper for Thumbnails */
 .responsive {
-  padding: 0 6px;
+  padding: 6px;
   float: left;
   max-width: 25%;
 }
