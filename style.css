@@ -1,6 +1,6 @@
 /* Remove Browser Defaults*/
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
-	margin: 0; padding: 0; border: 0;
+  margin: 0; padding: 0; border: 0;
 }
 
 html, body {
@@ -17,6 +17,12 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Flexbox to Fill Page Height */
 .fill-height {
   min-height: 100%;
@@ -29,6 +35,8 @@ body {
 .header {
   flex-shrink: 0;
   background-color: #f1f1f1;
+  font-size: 2.5em;
+  text-transform: uppercase;
   text-align: center;
   padding: 20px;
 }
@@ -38,6 +46,8 @@ body {
   flex-shrink: 0;
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 /* Top Navigation Bar - Links */
@@ -60,27 +70,79 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   background-color: #95c3b9;
-  padding: 15px;
+  padding: 50px;
+}
+
+/* Section Header */
+.section-header {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Two Column Layout */
-.column {
+.two-column {
   flex: 1;
   float: left;
   width: 50%;
   padding: 15px;
 }
 
-/* Clear Floats After Columns */
+/* Clear Floats After Row */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive Layout - Stack Columns */
-@media screen and (max-width:600px) {
-  .column {
+/* Thumbnail */
+.thumbnail {
+  border: 2px solid #95c3b9;
+}
+
+/* Thumbnail - Hover */
+.thumbnail:hover {
+  border: 2px solid #333;
+}
+
+/* Thumbnail - Image */
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Thumbnail - Links */
+.thumbnail a {
+  text-decoration: none;
+}
+
+/* Caption */
+.caption {
+  padding: 15px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Responsive Wrapper for Thumbnails */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/* Responsive Layout Options */
+@media only screen and (max-width: 700px) {
+  .column { /* Switch back to max-width 600px if necessary */
+    width: 100%;
+  }
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
     width: 100%;
   }
 }
