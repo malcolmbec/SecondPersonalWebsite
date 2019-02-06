@@ -23,7 +23,7 @@ ul {
   padding: 0;
 }
 
-/* Flexbox to Fill Page Height */
+/* Flexbox to Fill Height */
 .fill-height {
   min-height: 100%;
   display: flex;
@@ -80,14 +80,6 @@ ul {
   text-align: center;
 }
 
-/* Two Column Layout */
-.two-column {
-  flex: 1;
-  float: left;
-  width: 50%;
-  padding: 15px;
-}
-
 /* Clear Floats After Row */
 .row:after {
   content: "";
@@ -98,6 +90,8 @@ ul {
 /* Thumbnail */
 .thumbnail {
   border: 2px solid #95c3b9;
+  max-width: 280px;
+  height: 280px;
 }
 
 /* Thumbnail - Hover */
@@ -107,6 +101,15 @@ ul {
 
 /* Thumbnail - Image */
 .thumbnail img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Thumnail - Video */
+.thumbnail iframe {
+  flex: 1;
   max-width: 100%;
   height: auto;
   display: block;
@@ -115,10 +118,15 @@ ul {
 /* Thumbnail - Links */
 .thumbnail a {
   text-decoration: none;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 /* Caption */
 .caption {
+  flex: 1;
   padding: 15px;
   background-color: #f1f1f1;
   text-align: center;
@@ -135,11 +143,6 @@ ul {
 @media only screen and (max-width: 900px) {
   .responsive {
     max-width: 33.3333%
-  }
-}
-@media only screen and (max-width: 800px) {
-  .column {
-    max-width: 100%;
   }
 }
 @media only screen and (max-width: 700px) {
