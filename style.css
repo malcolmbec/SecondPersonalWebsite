@@ -130,6 +130,7 @@ ul {
 /* Thumnail - Video */
 .thumbnail iframe {
   flex: 1;
+  display: block;
 }
 
 /* Caption */
