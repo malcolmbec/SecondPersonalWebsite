@@ -146,6 +146,8 @@ ul {
   padding: 15px;
   background-color: #f1f1f1;
   text-align: center;
+  justify-content: center;
+  font-size: 1vw;
 }
 
 /* Thumbnail - Wrapper for Responsive Layout */
