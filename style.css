@@ -3,6 +3,11 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 	margin: 0; padding: 0; border: 0;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   line-height: 1.5;
@@ -12,8 +17,17 @@ body {
   box-sizing: border-box;
 }
 
+/* Flexbox to Fill Page Height */
+.fill-height {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 /* Header */
 .header {
+  flex-shrink: 0;
   background-color: #f1f1f1;
   text-align: center;
   padding: 20px;
@@ -21,6 +35,7 @@ body {
 
 /* Top Navigation Bar */
 .top-nav {
+  flex-shrink: 0;
   overflow: hidden;
   background-color: #333;
 }
@@ -28,7 +43,6 @@ body {
 /* Top Navigation Bar - Links */
 .top-nav a {
   float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -43,12 +57,15 @@ body {
 
 /* Content */
 .content {
+  flex-grow: 1;
+  flex-shrink: 0;
   background-color: #95c3b9;
   padding: 15px;
 }
 
 /* Two Column Layout */
 .column {
+  flex: 1;
   float: left;
   width: 50%;
   padding: 15px;
@@ -70,7 +87,24 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #F1F1F1;
-  text-align: center;
+  flex-shrink: 0;
   padding: 10px;
+  color: #f2f2f2;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Footer - Links */
+.footer a {
+  display: block;
+  padding: 4px 6px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Footer - Hover */
+.footer:hover {
+  background-color: #ddd;
+  color: black;
 }
