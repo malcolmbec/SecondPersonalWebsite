@@ -128,14 +128,12 @@ ul {
 .responsive {
   padding: 0 6px;
   float: left;
-  max-width: 25%;
+  max-width: 50%;
 }
 
 /* Responsive Layout Options */
 @media only screen and (max-width: 700px) {
-  .responsive {
-    max-width: 50%;
-  }
+  
 }
 
 @media only screen and (max-width: 600px) {
