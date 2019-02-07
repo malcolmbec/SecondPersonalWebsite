@@ -11,6 +11,7 @@ html, body {
 body {
   margin: 0;
   line-height: 1.5;
+  background-color: #95c3b9;
 }
 
 * {
@@ -69,7 +70,6 @@ ul {
 .content {
   flex-grow: 1;
   flex-shrink: 0;
-  background-color: #95c3b9;
   padding: 44px 50px;
 }
 
@@ -78,13 +78,15 @@ ul {
   font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
+  padding: 10px;
 }
 
-/* Row - Clear Floats */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Row */
+.row {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Thumbnail */
