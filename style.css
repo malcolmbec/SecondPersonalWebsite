@@ -4,8 +4,8 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -46,7 +46,7 @@ ul {
   font-size: 4em;
 }
 .header p {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 /* Top Navigation Bar */
@@ -100,7 +100,12 @@ ul {
 /* Column */
 .column {
   flex: 50%;
-  padding: 10px;
+  padding: 20px;
+}
+
+/* Column - Text */
+.column p {
+  font-size: 24px;
 }
 
 /* Thumbnail */
