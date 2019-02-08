@@ -43,10 +43,10 @@ ul {
 
 /* Header - Text */
 .header h1 {
-  font-size: 4em;
+  font-size: 70px;
 }
 .header p {
-  font-size: 2.5em;
+  font-size: 30px;
 }
 
 /* Top Navigation Bar */
@@ -99,7 +99,8 @@ ul {
 
 /* Column */
 .column {
-  flex: 50%;
+  flex: left;
+  width: 50%;
   padding: 20px;
   font-size: 24px;
 }
@@ -214,7 +215,14 @@ ul {
     max-width: 50%
   }
   .column {
+    width: 100%;
     font-size: 14px;
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  .header p {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 500px) {
