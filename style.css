@@ -70,6 +70,7 @@ ul {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -252,6 +253,9 @@ ul {
   }
   .header p {
     font-size: 20px;
+  }
+  .top-nav a {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 500px) {
