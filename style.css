@@ -134,7 +134,20 @@ ul {
   border-radius: 50%;
 }
 
-/* Icons */
+/* About Me - Text */
+#bio {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact - Text */
+#contact {
+  font-size: 24px;
+  text-align: center;
+  display: block;
+}
+
+/* Contact - Icons */
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -245,6 +258,9 @@ ul {
   .column .image-frame {
     max-height: 400px;
     max-width: 400px;
+  }
+  #contact {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 700px) {
